@@ -8,6 +8,10 @@ import chess.ChessPosition;
 import chess.Color;
 
 public class UI {
+
+	public static void clearScreen() {
+		System.out.print("\033\143");
+	}
 	
 	public static ChessPosition readChessPosition(Scanner in) {
 		try {
